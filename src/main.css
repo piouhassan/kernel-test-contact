@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+section {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+section .left {
+    width: 30%;
+    background: #f4f4f4;
+    height: 100vh;
+    padding: 20px;
+
+}
+
+section .left h3{
+    padding: 10px;
+}
+
+section .left form {
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+}
+
+
+section .left form .form-input{
+    margin: 5px;
+    display: block;
+}
+
+input,
+ button {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 3px;
+}
+
+
+section .left form .form-input input{
+    margin: 5px 0 10px;
+    font-size: 1rem;
+    color: #656880;
+}
+
+section .left form .form-input label {
+  font-weight: 400;
+}
+
+
+.btn-send{
+    background: linear-gradient(to right, #89CAFF, #6589FF);
+    display: block;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 20px #89caff94;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container-text button:hover {
+    box-shadow: none;
+}
+
+section .right{
+    width: 70%;
+    padding: 20px;
+
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    width: 100%;
+}
+
+.styled-table thead tr {
+    text-align: left;
+    border-bottom: 1px solid #6589FF;
+    border-top: 1px solid #6589FF;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table td {
+    opacity: 0.6;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 1px solid #6589FF;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #6589FF;
+}
+
+.text-primary{
+    color: #6589FF;
+}
+
+
+.text-danger{
+    color: #d51a44;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.btn-small{
+    border: none;
+     padding: 10px;
+    outline: none;
+    background: none;
+    color: #fff;
+    max-width: 100px;
+    float: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.btn-primary{
+    background: #6589FF !important;
+}
+
+.btn-danger{
+    background: #d51a44;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    section {
+        display: block;
+        overflow: auto;
+    }
+
+    .left{
+        width: 100% !important;
+    }
+
+    .right{
+        width: 100%;
+    }
+}
